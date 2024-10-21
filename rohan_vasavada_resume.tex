@@ -77,6 +77,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingDouble}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \small #4 \\
+      \textit{\small#5} & \small #6 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -114,38 +123,37 @@
 
 \begin{center}
     \textbf{\Huge \scshape Rohan Vasavada} \\ \vspace{6pt}
-    \small Pewaukee, WI \& Champaign, IL $|$ rdv2@illinois.edu $|$ 262-212-6780 $|$ www.linkedin.com/in/rohan-vasavada
+    \small Chicago, IL $|$ rohanvasavada@gmail.com $|$ 262-212-6780 $|$ www.linkedin.com/in/rohan-vasavada
     \\
     \vspace{1pt}
 \end{center}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Illinois at Urbana-Champaign}{Expected Graduation: December 2022}
-      {Bachelor of Science in Computer Science}{GPA: 3.60}
-      \resumeItemListStart
-        \resumeItem{Advanced coursework: Cloud Computing, System Programming, Database Systems, Applied ML }
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
 \section{Work Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
-      {Capital One}{McLean, VA}
+      {Capital One}{Chicago, IL}
+      {Senior Associate Software Engineer}{February 2023 - January 2024}
+      \resumeItemListStart
+        \resumeItem{Reworked 15 complex data Python/Scala/Spark/Airflow workflows to integrate with Capital One's enterprise data publishing platform and completed the project well in advance of timeline expectations, allowing our team to meet platform convergence goals ahead of schedule}
+        \resumeItem{Developed key components and led testing for the addition of Delta Lake merge dataset load pattern capabilities to Capital One's enterprise data publishing platform, allowing hundreds of previously blocked teams to converge onto the enterprise platform}
+      \resumeItemListEnd
+    \resumeSubSubheading
+      {Associate Software Engineer}{February 2023 - January 2024}
+      \resumeItemListStart
+        \resumeItem{Analyzed and implemented fixes for failures in Capital One's enterprise CI/CD pipeline framework, preventing $\sim$200 deployment failures on a monthly basis }
+        \resumeItem{Designed and developed a workflow for aggregating metadata on code review processes in order to drive process improvements and expedite release timelines}
+      \resumeItemListEnd
+    \resumeSubSubheading
       {Software Engineer Intern}{June 2022 - August 2022}
       \resumeItemListStart
-        \resumeItem{Constructed a model retraining pipeline in Kubeflow to spearhead migration from Argo Kubernetes Workflows, utilizing Python and Boto3 for integration with AWS services}
-        \resumeItem{Developed custom Python components to serve as a proof-of-concept for ETL processes within Kubeflow}
+        \resumeItem{Spearheaded migration of ML model re-training workflows to Kubeflow Pipelines for enhanced performance and observability}
       \resumeItemListEnd
     \resumeSubSubheading
       {Software Engineer Intern}{June 2021 - August 2021}
       \resumeItemListStart
-        \resumeItem{Developed an application using Golang, ReactJS, and PostgreSQL to streamline and automate a complex software governance process, resulting in estimated savings of \$140k annually}
+        \resumeItem{Developed an application to automate and expedite architecture governance processes using ReactJS with a Go backend and PostgreSQL persistence layer, saving $\sim$140k annually}
         \resumeItem{Aggregated and transformed data from independent streams and developed REST API endpoints within a microservice architecture for automated calculation and access to governance metrics }
       \resumeItemListEnd
 
@@ -153,17 +161,8 @@
       {Cargill}{Champaign, IL}
       {Software Engineer Intern}{August 2021 - December 2021}
       \resumeItemListStart
-        \resumeItem{Developed an ML model prototype to cluster over 50k text incident records in order to identify underlying trends and cost savings opportunities}
-        \resumeItem{Used Python libraries to experiment with various text vectorization and clustering algorithms to identify the best approach for producing actionable results}
+        \resumeItem{Developed a POC for generating cost savings insights for incident root cause analysis based on text data utilizing a specialized topic modeling approach with BERT word embedding generation and DBSCAN unsupervised clustering}
     \resumeItemListEnd
-
-    \resumeSubheading
-      {Ziplyne}{Skillman, NJ (Remote)}
-      {Software Engineer Intern}{May 2020 - August 2020}
-      \resumeItemListStart
-        \resumeItem{Used ReactJS to develop web pages for the marketing team used for showcasing Ziplyne’s features and capabilities to potential clients and investors}
-        \resumeItem{Developed custom ReactJS components allowing for increased development speed and code reuse team-wide}
-      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -171,13 +170,6 @@
 %-----------PROJECTS-----------
 \section{Additional Experience}
     \resumeSubHeadingListStart
-      \resumeSubheading
-          {Gies Disruption Lab}{Champaign, IL}
-          {Software Engineer}{January 2022 - May 2022}
-          \resumeItemListStart
-            \resumeItem{Completed the construction of cloud-based model retraining and prediction pipelines utilizing AWS S3, Lambda, and EMR to automate manual workflows}
-            \resumeItem{Retrieved, transformed, and combined data from various sources using Python to increase the breadth of input data and reduce model bias}
-          \resumeItemListEnd
       \resumeSubheading
           {Pulse 2022}{Champaign, IL}
           {Technical Director}{May 2021 - May 2022}
@@ -199,6 +191,14 @@
     }}
  \end{itemize}
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingDouble
+      {University of Illinois at Urbana-Champaign}{}
+      {Master of Computer Science}{Expected Graduation: December 2025}
+      {Bachelor of Science in Computer Science}{December 2022}
+  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
