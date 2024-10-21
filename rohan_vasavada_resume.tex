@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\usepackage[T1]{fontenc}
+\fontfamily{georgia}\selectfont
+% times-new0
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\bf\scshape\raggedright
+}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Rohan Vasavada} \\ \vspace{6pt}
+    \small Pewaukee, WI \& Champaign, IL $|$ rdv2@illinois.edu $|$ 262-212-6780 $|$ www.linkedin.com/in/rohan-vasavada
+    \\
+    \vspace{1pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois at Urbana-Champaign}{Expected Graduation: December 2022}
+      {Bachelor of Science in Computer Science}{GPA: 3.60}
+      \resumeItemListStart
+        \resumeItem{Advanced coursework: Cloud Computing, System Programming, Database Systems, Applied ML }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Capital One}{McLean, VA}
+      {Software Engineer Intern}{June 2022 - August 2022}
+      \resumeItemListStart
+        \resumeItem{Constructed a model retraining pipeline in Kubeflow to spearhead migration from Argo Kubernetes Workflows, utilizing Python and Boto3 for integration with AWS services}
+        \resumeItem{Developed custom Python components to serve as a proof-of-concept for ETL processes within Kubeflow}
+      \resumeItemListEnd
+    \resumeSubSubheading
+      {Software Engineer Intern}{June 2021 - August 2021}
+      \resumeItemListStart
+        \resumeItem{Developed an application using Golang, ReactJS, and PostgreSQL to streamline and automate a complex software governance process, resulting in estimated savings of \$140k annually}
+        \resumeItem{Aggregated and transformed data from independent streams and developed REST API endpoints within a microservice architecture for automated calculation and access to governance metrics }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cargill}{Champaign, IL}
+      {Software Engineer Intern}{August 2021 - December 2021}
+      \resumeItemListStart
+        \resumeItem{Developed an ML model prototype to cluster over 50k text incident records in order to identify underlying trends and cost savings opportunities}
+        \resumeItem{Used Python libraries to experiment with various text vectorization and clustering algorithms to identify the best approach for producing actionable results}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Ziplyne}{Skillman, NJ (Remote)}
+      {Software Engineer Intern}{May 2020 - August 2020}
+      \resumeItemListStart
+        \resumeItem{Used ReactJS to develop web pages for the marketing team used for showcasing Ziplyne’s features and capabilities to potential clients and investors}
+        \resumeItem{Developed custom ReactJS components allowing for increased development speed and code reuse team-wide}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Additional Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+          {Gies Disruption Lab}{Champaign, IL}
+          {Software Engineer}{January 2022 - May 2022}
+          \resumeItemListStart
+            \resumeItem{Completed the construction of cloud-based model retraining and prediction pipelines utilizing AWS S3, Lambda, and EMR to automate manual workflows}
+            \resumeItem{Retrieved, transformed, and combined data from various sources using Python to increase the breadth of input data and reduce model bias}
+          \resumeItemListEnd
+      \resumeSubheading
+          {Pulse 2022}{Champaign, IL}
+          {Technical Director}{May 2021 - May 2022}
+          \resumeItemListStart
+            \resumeItem{Coordinated the development of a new cross-platform mobile app with Flutter allowing tech conference attendees to view schedules and check into events}
+            \resumeItem{Developed a backend system consisting of a Node.js REST API and MongoDB database layer to integrate Pulse's app and website and streamline conference registration processes}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python · C/C++ · Java · JavaScript · SQL · HTML/CSS · Golang · Swift · Dart} \\
+     \textbf{Frameworks/Technologies}{: Node.js · Gin · NumPy/pandas · ReactJS · Flutter · MongoDB · Docker} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
